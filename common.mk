@@ -291,6 +291,13 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libstagefrighthw
 
+# OPlusExtras
+ifeq ($(WITH_OPLUSEXTRAS), true)
+PRODUCT_PACKAGES += \
+    OPlusExtras
+    OPlusExtrasResCommon
+endif
+
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
