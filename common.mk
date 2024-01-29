@@ -294,7 +294,7 @@ PRODUCT_PACKAGES += \
 # OPlusExtras
 ifeq ($(WITH_OPLUSEXTRAS), true)
 PRODUCT_PACKAGES += \
-    OPlusExtras
+    OPlusExtras \
     OPlusExtrasResCommon
 endif
 
